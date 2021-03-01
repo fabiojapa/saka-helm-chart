@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+    name: {{ .Release.Name }}-configmap
+data:
+    myvalue: "Hello World"
+    tag: {{ .Values.image.tag | default "tea" | repeat 5 | upper | quote }}
+    fullname: {{ include "template.fullname" . | indent 4 }}

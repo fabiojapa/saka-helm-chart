@@ -8,11 +8,11 @@ image:
   repository: nginx
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: ""
+  tag: "saka"
 
 imagePullSecrets: []
 nameOverride: ""
-fullnameOverride: ""
+fullnameOverride: "12345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890"
 
 serviceAccount:
   # Specifies whether a service account should be created
